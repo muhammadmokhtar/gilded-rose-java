@@ -1,6 +1,10 @@
-package com.gildedrose;
+package com.gildedrose.item;
 
-import static com.gildedrose.GildedRoseHelperUtil.increaseQualityCheck;
+import static com.gildedrose.util.GildedRoseHelperUtil.increaseQualityCheck;
+
+import com.gildedrose.behavior.IncreaseQualityBehavior;
+import com.gildedrose.behavior.UpdateQualityBehavior;
+import com.gildedrose.behavior.UpdateQualitySellInPassedBehaviour;
 
 public class AgedBrieItem extends Item implements UpdateQualityBehavior, IncreaseQualityBehavior, UpdateQualitySellInPassedBehaviour {
 	
@@ -25,6 +29,5 @@ public class AgedBrieItem extends Item implements UpdateQualityBehavior, Increas
 	public void updateQualitySellInPassed(Item item) {
 		increaseQuality(item);
 	}
-
 
 }

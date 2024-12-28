@@ -1,4 +1,6 @@
-package com.gildedrose;
+package com.gildedrose.item;
+
+import com.gildedrose.behavior.UpdateQualityBehavior;
 
 public class SulfurasItem extends Item implements UpdateQualityBehavior {
 
